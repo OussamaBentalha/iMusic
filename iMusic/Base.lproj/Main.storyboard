@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KAl-xm-Cp8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MasterViewController" customModule="iMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PfU-TO-uoJ">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="pkw-Pg-mJr">
+                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="pkw-Pg-mJr" id="sjR-FJ-h3Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="777"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TYC-nv-mre">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KAl-xm-Cp8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xA5-hA-S7I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EG4-re-fVt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rai-xE-bL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="776.76161919040487"/>
+        </scene>
+        <!--Music View Controller-->
+        <scene sceneID="ilb-4l-fN7">
+            <objects>
+                <viewController storyboardIdentifier="MusicViewController" id="bq9-hz-WeV" customClass="MusicViewController" customModule="iMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eMV-ze-I8Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bhy-Pk-F6r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FbA-Kn-Qol">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BXZ-UR-nNm">
+                                <frame key="frameInset" minY="-7" width="375" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="reuseIdentifier" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="69" id="ItB-WP-sB2" customClass="MusicTableViewCell" customModule="iMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="69"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ItB-WP-sB2" id="s4o-qV-LA0">
+                                            <frame key="frameInset" width="375" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyC-tZ-BUf">
+                                                    <frame key="frameInset" minX="17" minY="38" width="338" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raM-u5-Fwp">
+                                                    <frame key="frameInset" minX="17" minY="7" width="338" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="author" destination="qyC-tZ-BUf" id="ITP-Ul-e2q"/>
+                                            <outlet property="title" destination="raM-u5-Fwp" id="Hv6-bu-IhC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pHR-xP-Lt3">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="yvZ-j1-ZPK"/>
+                                    <barButtonItem systemItem="rewind" id="aVI-Ut-Hgd">
+                                        <connections>
+                                            <action selector="rewindTouch:" destination="bq9-hz-WeV" id="PRi-zj-sf7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="E1t-yR-7p0"/>
+                                    <barButtonItem systemItem="play" id="ohc-z0-hyP">
+                                        <connections>
+                                            <action selector="playTouch:" destination="bq9-hz-WeV" id="ECH-U1-etk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="mrT-Ks-dQk"/>
+                                    <barButtonItem systemItem="pause" id="unO-oa-sPb">
+                                        <connections>
+                                            <action selector="pauseTouch:" destination="bq9-hz-WeV" id="FY2-Wo-GfN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="tNE-k4-h8w"/>
+                                    <barButtonItem systemItem="stop" id="gfS-J2-1sd">
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <nil key="tintColor"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="stopTouch:" destination="bq9-hz-WeV" id="HJF-bB-Zfu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="B9n-gC-DUm"/>
+                                    <barButtonItem systemItem="fastForward" id="6Mv-BH-GAF">
+                                        <connections>
+                                            <action selector="forwadTouch:" destination="bq9-hz-WeV" id="hYs-WG-L2U"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="BXZ-UR-nNm" id="Jej-ST-TG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s67-8v-Wxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="1535.9820089955024"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="Uj0-gF-zzW">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" id="wQn-jC-hdN" customClass="VideoViewController" customModule="iMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qS9-8P-6xm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ic3-LN-S2U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UDz-NU-xdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="erK-aD-OGe">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="erK-aD-OGe" id="GRn-qa-Lio"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKg-qC-QcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998" y="1536"/>
+        </scene>
+    </scenes>
+</document>
