@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092302501DFB37660022F066 /* iMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923024F1DFB37660022F066 /* iMusicTests.swift */; };
 		0988C8041DEC667D0076153E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988C8031DEC667D0076153E /* AppDelegate.swift */; };
 		0988C8061DEC667D0076153E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988C8051DEC667D0076153E /* MasterViewController.swift */; };
 		0988C8091DEC667D0076153E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0988C8071DEC667D0076153E /* Main.storyboard */; };
@@ -20,7 +21,20 @@
 		0988C8241DED8A860076153E /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988C8221DED8A860076153E /* MusicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		092302521DFB37660022F066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0988C7F81DEC667D0076153E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0988C7FF1DEC667D0076153E;
+			remoteInfo = iMusic;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0923024D1DFB37660022F066 /* iMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0923024F1DFB37660022F066 /* iMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMusicTests.swift; sourceTree = "<group>"; };
+		092302511DFB37660022F066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0988C8001DEC667D0076153E /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0988C8031DEC667D0076153E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0988C8051DEC667D0076153E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0923024A1DFB37660022F066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0988C7FD1DEC667D0076153E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0923024E1DFB37660022F066 /* iMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				0923024F1DFB37660022F066 /* iMusicTests.swift */,
+				092302511DFB37660022F066 /* Info.plist */,
+			);
+			path = iMusicTests;
+			sourceTree = "<group>";
+		};
 		0988C7F71DEC667D0076153E = {
 			isa = PBXGroup;
 			children = (
 				0988C8021DEC667D0076153E /* iMusic */,
+				0923024E1DFB37660022F066 /* iMusicTests */,
 				0988C8011DEC667D0076153E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0988C8001DEC667D0076153E /* iMusic.app */,
+				0923024D1DFB37660022F066 /* iMusicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +149,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0923024C1DFB37660022F066 /* iMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092302561DFB37660022F066 /* Build configuration list for PBXNativeTarget "iMusicTests" */;
+			buildPhases = (
+				092302491DFB37660022F066 /* Sources */,
+				0923024A1DFB37660022F066 /* Frameworks */,
+				0923024B1DFB37660022F066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				092302531DFB37660022F066 /* PBXTargetDependency */,
+			);
+			name = iMusicTests;
+			productName = iMusicTests;
+			productReference = 0923024D1DFB37660022F066 /* iMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0988C7FF1DEC667D0076153E /* iMusic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0988C8121DEC667D0076153E /* Build configuration list for PBXNativeTarget "iMusic" */;
@@ -144,6 +194,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Esgi;
 				TargetAttributes = {
+					0923024C1DFB37660022F066 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0988C7FF1DEC667D0076153E;
+					};
 					0988C7FF1DEC667D0076153E = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -164,11 +219,19 @@
 			projectRoot = "";
 			targets = (
 				0988C7FF1DEC667D0076153E /* iMusic */,
+				0923024C1DFB37660022F066 /* iMusicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0923024B1DFB37660022F066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0988C7FE1DEC667D0076153E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,6 +245,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		092302491DFB37660022F066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092302501DFB37660022F066 /* iMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0988C7FC1DEC667D0076153E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +269,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		092302531DFB37660022F066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0988C7FF1DEC667D0076153E /* iMusic */;
+			targetProxy = 092302521DFB37660022F066 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0988C8071DEC667D0076153E /* Main.storyboard */ = {
@@ -219,6 +298,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		092302541DFB37660022F066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.iMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMusic.app/iMusic";
+			};
+			name = Debug;
+		};
+		092302551DFB37660022F066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.iMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMusic.app/iMusic";
+			};
+			name = Release;
+		};
 		0988C8101DEC667D0076153E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +442,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		092302561DFB37660022F066 /* Build configuration list for PBXNativeTarget "iMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092302541DFB37660022F066 /* Debug */,
+				092302551DFB37660022F066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0988C7FB1DEC667D0076153E /* Build configuration list for PBXProject "iMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -353,6 +466,7 @@
 				0988C8141DEC667D0076153E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
