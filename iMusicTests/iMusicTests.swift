@@ -37,13 +37,14 @@ class iMusicTests: XCTestCase {
     
     
     func testExample2() {
-        var m1 : Music = Music(id : "21", title : "myMusic", author : "Benthalalalalla")
-        if(m1 == nil){
+        let m1 : Music? = Music(id : "21", title : "myMusic", author : "Benthalalalalla")
+        if(m1 === nil){
             XCTAssertTrue(false, "La musique n'a pas été crée")
         }
         else {
             XCTAssertTrue(true, "La musique a bien été crée")
         }
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
