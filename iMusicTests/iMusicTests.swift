@@ -39,4 +39,11 @@ class iMusicTests: XCTestCase {
         }
     }
     
+    
+    func testExample2() {
+        XCTAssertTrue(true, "------------------------------------- example2 -------------------------------------")
+        
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
 }
