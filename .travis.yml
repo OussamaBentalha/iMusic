@@ -8,6 +8,6 @@ notifications:
     email: false
 before_install:
     - gem install bundler
-    - bundle install && brew bundle
+    - bundle install
 script:
     - bundle exec fastlane tests
