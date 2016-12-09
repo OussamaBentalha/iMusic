@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='iMusicTests.xctest' tests='2' failures='1'>
+  <testsuite name='iMusicTests.iMusicTests' tests='2' failures='1'>
+    <testcase classname='iMusicTests.iMusicTests' name='testExample'>
+      <failure message='XCTAssertTrue failed - ------------------------------------- false -------------------------------------'>iMusicTests/iMusicTests.swift:26</failure>
+    </testcase>
+    <testcase classname='iMusicTests.iMusicTests' name='testPerformanceExample' time='0.262'/>
+  </testsuite>
+</testsuites>

@@ -21,6 +21,13 @@ class iMusicTests: XCTestCase {
     }
     
     func testExample() {
+        XCTAssertTrue(true, "------------------------------------- true -------------------------------------")
+        
+        //XCTAssertTrue(false, "------------------------------------- false -------------------------------------")
+        
+        print("-------------------------------------")
+        print(" Lancement du TU")
+        print("-------------------------------------")
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

@@ -1,5 +1,7 @@
 osx_image: xcode8.0
 language: objective-c
+xcode_project: iMusicProject.xcodeproj
+xcode_scheme: iMusicTests
 branches:
     only:
         - develop
