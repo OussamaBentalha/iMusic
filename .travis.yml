@@ -13,4 +13,5 @@ before_install:
     - gem install bundle
     - bundle install && brew bundle
 script:
+    - bundle update scan
     - bundle exec fastlane tests
