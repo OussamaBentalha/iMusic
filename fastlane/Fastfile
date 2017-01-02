@@ -6,6 +6,7 @@ lane :tests do
     devices: ["iPhone SE"],
     code_coverage: true,
     clean: true,
+    skip_slack: true,
     output_types: "html"
   )
 end
