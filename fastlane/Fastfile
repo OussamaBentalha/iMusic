@@ -1,3 +1,11 @@
+default_platform :ios
+
 lane :tests do
-    scan()
+  scan(
+    scheme: 'iMusic',
+    devices: ["iPhone 5s"],
+    code_coverage: true,
+    clean: true,
+    output_types: "html"
+  )
 end
