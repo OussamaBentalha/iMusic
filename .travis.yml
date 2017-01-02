@@ -2,6 +2,7 @@ osx_image: xcode8.1
 language: objective-c
 xcode_project: iMusicProject.xcodeproj
 xcode_scheme: iMusicTests
+bundler_args: --retry 3
 branches:
     only:
         - develop
@@ -9,7 +10,7 @@ branches:
 notifications:
     email: false
 before_install:
-    - gem install bundler
-    - bundle install
+    - gem install bundle
+    - bundle install && brew bundle
 script:
     - bundle exec fastlane tests
