@@ -15,4 +15,4 @@ before_install:
 script:
     - bundle update scan
     - bundle update fastlane
-    - bundle exec fastlane tests
+    - bundle exec fastlane --verbose tests
