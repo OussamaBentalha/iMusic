@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='iMusicTests.xctest' tests='4' failures='0'>
-  <testsuite name='iMusicTests.iMusicTests' tests='4' failures='0'>
-    <testcase classname='iMusicTests.iMusicTests' name='testExample' time='0.004'/>
+<testsuites name='iMusicTests.xctest' tests='3' failures='0'>
+  <testsuite name='iMusicTests.iMusicTests' tests='3' failures='0'>
+    <testcase classname='iMusicTests.iMusicTests' name='testExample' time='0.001'/>
     <testcase classname='iMusicTests.iMusicTests' name='testExample2' time='0.000'/>
-    <testcase classname='iMusicTests.iMusicTests' name='testExample3' time='0.000'/>
     <testcase classname='iMusicTests.iMusicTests' name='testPerformanceExample' time='0.263'/>
   </testsuite>
 </testsuites>
