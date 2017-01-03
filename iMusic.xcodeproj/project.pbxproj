@@ -190,12 +190,16 @@
 		0988C7F81DEC667D0076153E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Esgi;
 				TargetAttributes = {
 					0923024C1DFB37660022F066 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LM554FRKUD;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0988C7FF1DEC667D0076153E;
 					};
@@ -302,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LM554FRKUD;
 				INFOPLIST_FILE = iMusicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.iMusicTests;
@@ -315,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LM554FRKUD;
 				INFOPLIST_FILE = iMusicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.iMusicTests;
@@ -449,6 +455,7 @@
 				092302551DFB37660022F066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0988C7FB1DEC667D0076153E /* Build configuration list for PBXProject "iMusic" */ = {
 			isa = XCConfigurationList;
