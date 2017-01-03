@@ -22,7 +22,7 @@ class iMusicTests: XCTestCase {
     }
     
     func testExample() {
-        XCTAssertTrue(true, "------------------------------------- true -------------------------------------")
+//        XCTAssertTrue(true, "------------------------------------- true -------------------------------------")
 
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -38,7 +38,7 @@ class iMusicTests: XCTestCase {
     
     func testExample2() {
 
-        XCTAssertTrue(true, "La musique a bien été crée")
+//        XCTAssertTrue(true, "La musique a bien été crée")
         
         // let m1 : Music? = Music(id : "21", title : "myMusic", author : "Benthalalalalla")
         // //if(m1 === nil){
