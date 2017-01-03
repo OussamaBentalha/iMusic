@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.1
+osx_image: xcode8
 xcode_project: iMusic.xcodeproj
 xcode_scheme: iMusicTests
 bundler_args: --retry 3
