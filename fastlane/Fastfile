@@ -1,5 +1,3 @@
-default_platform :ios
-
 lane :tests do
   scan(
     scheme: 'iMusic',

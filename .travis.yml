@@ -13,6 +13,6 @@ before_install:
     - gem install bundler
     - bundle install && brew bundle
 script:
-    - bundle update scan
-    - bundle update fastlane
+#    - bundle update scan
+#    - bundle update fastlane
     - bundle exec fastlane tests --verbose
