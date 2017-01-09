@@ -77,8 +77,8 @@
 			children = (
 				0923024F1DFB37660022F066 /* iMusicTests.swift */,
 				094D0B501E22DFEC005C4FE0 /* iMusicPlayerTests.swift */,
-				092302511DFB37660022F066 /* Info.plist */,
 				094D0B521E22E1EC005C4FE0 /* iMusicRequestTest.swift */,
+				092302511DFB37660022F066 /* Info.plist */,
 			);
 			path = iMusicTests;
 			sourceTree = "<group>";

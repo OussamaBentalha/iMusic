@@ -7,8 +7,13 @@
 //
 
 import XCTest
+@testable import iMusic
 
 class iMusicRequestTest: XCTestCase {
+    
+    var multimediaDH : MultimediaDataHelper!
+    var musicList :[Music] = []
+    var videoList :[Video] = []
     
     override func setUp() {
         super.setUp()
@@ -19,16 +24,26 @@ class iMusicRequestTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+
     
     func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        self.measure {} // Put the code you want to measure the time of here.
+    }
+    
+    
+    func testGetMusicList(){
+        multimediaDH?.musics(){
+            (result: [Music]) in
+            self.musicList = result
+            XCTAssertGreaterThan(self.musicList.count, 0, "Les musiques n'ont pas été récuperées")
+        }
+    }
+    
+    func testGetVideoList(){
+        multimediaDH?.videos(){
+            (result: [Video]) in
+            self.videoList = result
+            XCTAssertGreaterThan(self.videoList.count, 0, "Les videos n'ont pas été récuperées")
         }
     }
     
