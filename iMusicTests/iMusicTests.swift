@@ -38,7 +38,7 @@ class iMusicTests: XCTestCase {
     
     func testExample2() {
 
-       XCTAssertTrue(true, "La musique a bien été crée")
+       //XCTAssertTrue(true, "La musique a bien été crée")
         
         // let m1 : Music? = Music(id : "21", title : "myMusic", author : "Benthalalalalla")
         //m1?.author
