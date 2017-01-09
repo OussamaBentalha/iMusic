@@ -31,11 +31,9 @@ class iMusicPlayerTests: XCTestCase {
     }
     
     func testA(){
-        //Play music online
+        //Play music online during 5 secondes
         musicViewController!.launchMusicWithId(musicId: "583c186c21cb3a100df74f38")
+        sleep(5)
     }
-    
-    
-    
-    
+
 }
