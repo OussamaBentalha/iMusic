@@ -141,42 +141,11 @@ class MusicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     @IBAction func rewindTouch(_ sender: AnyObject) {
-        
-        if(player != nil ){
-            let previousId : Int = tableView.indexPathForSelectedRow!.row - 1
-
-            //Lance la musique precedante
-            if(self.musicList.count > 0 && previousId >= 0){
-                let indexPath : IndexPath = IndexPath(item: previousId, section: 0)
-                self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.top)
-                
-                let previousMusic : Music = self.musicList[previousId]
-                self.launchMusicWithId(musicId: previousMusic.id)
-            }
-            else{
-                displayMessage(title: "", message: "Vous avez atteint la premiere piste")
-            }
-        }
-
+        rewindMusic()
     }
     
     @IBAction func forwadTouch(_ sender: AnyObject) {
-        
-        if(player != nil ){
-            let nextId : Int = tableView.indexPathForSelectedRow!.row + 1
-        
-            //Lance la musique suivante
-            if(self.musicList.count > 0 && nextId < self.musicList.count){
-                let indexPath : IndexPath = IndexPath(item: nextId, section: 0)
-                self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.top)
-            
-                let nextMusic : Music = self.musicList[nextId]
-                self.launchMusicWithId(musicId: nextMusic.id)
-            }
-            else{
-                displayMessage(title: "", message: "Vous avez atteint la derniere piste")
-            }
-        }
+        forwardMusic()
     }
     
     func downloadFileFromURL(_ url:URL){
@@ -199,6 +168,49 @@ class MusicViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             print(error.localizedDescription)
         } catch {
             print("Echec au niveau de l'init de l'AVAudioPlayer")
+        }
+    }
+    
+    func stopMusic(){
+        if (player != nil){
+            player.stop()
+            player.currentTime = 0.0
+        }
+    }
+    
+    func forwardMusic(){
+        if(player != nil ){
+            let nextId : Int = tableView.indexPathForSelectedRow!.row + 1
+            
+            //Lance la musique suivante
+            if(self.musicList.count > 0 && nextId < self.musicList.count){
+                let indexPath : IndexPath = IndexPath(item: nextId, section: 0)
+                self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.top)
+                
+                let nextMusic : Music = self.musicList[nextId]
+                self.launchMusicWithId(musicId: nextMusic.id)
+            }
+            else{
+                displayMessage(title: "", message: "Vous avez atteint la derniere piste")
+            }
+        }
+    }
+    
+    func rewindMusic(){
+        if(player != nil ){
+            let previousId : Int = tableView.indexPathForSelectedRow!.row - 1
+            
+            //Lance la musique precedante
+            if(self.musicList.count > 0 && previousId >= 0){
+                let indexPath : IndexPath = IndexPath(item: previousId, section: 0)
+                self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.top)
+                
+                let previousMusic : Music = self.musicList[previousId]
+                self.launchMusicWithId(musicId: previousMusic.id)
+            }
+            else{
+                displayMessage(title: "", message: "Vous avez atteint la premiere piste")
+            }
         }
     }
     
