@@ -12,8 +12,6 @@ import XCTest
 class iMusicPlayerTests: XCTestCase {
     
     var musicViewController : MusicViewController?
-    var multimediaDH : MultimediaDataHelper!
-    var musicList :[Music] = []
     
     override func setUp() {
         super.setUp()
@@ -36,9 +34,7 @@ class iMusicPlayerTests: XCTestCase {
         //Play music online during 5 secondes
         musicViewController!.launchMusicWithId(musicId: "583c186c21cb3a100df74f38")
         sleep(1)
-    }
-    
-    func TestB(){
+        
         //Test Play
         var isPlaying = musicViewController?.player.isPlaying
         XCTAssertTrue(isPlaying!, "Not onStart()")
@@ -47,9 +43,8 @@ class iMusicPlayerTests: XCTestCase {
         musicViewController?.player.pause()
         isPlaying = musicViewController?.player.isPlaying
         XCTAssertFalse(isPlaying!, "Not onPause()")
-    }
-    
-    func TestC(){
+        
+        
         //Test Current time not a the begining
         let currentTime = (musicViewController?.player.currentTime)!
         XCTAssertGreaterThan(currentTime, 0.0, "Current time = 0.0")
@@ -59,7 +54,4 @@ class iMusicPlayerTests: XCTestCase {
         let currentTimeOnStop = (musicViewController?.player.currentTime)!
         XCTAssertEqual(currentTimeOnStop, 0.0, "Current time different to 0.0")
     }
-    
-    
-
 }
