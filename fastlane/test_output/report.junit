@@ -1,8 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='iMusicTests.xctest' tests='3' failures='0'>
+<testsuites name='iMusicTests.xctest' tests='8' failures='0'>
+  <testsuite name='iMusicTests.iMusicPlayerTests' tests='2' failures='0'>
+    <testcase classname='iMusicTests.iMusicPlayerTests' name='testA' time='1.049'/>
+    <testcase classname='iMusicTests.iMusicPlayerTests' name='testPerformanceExample' time='0.271'/>
+  </testsuite>
+  <testsuite name='iMusicTests.iMusicRequestTest' tests='3' failures='0'>
+    <testcase classname='iMusicTests.iMusicRequestTest' name='testGetMusicList' time='0.000'/>
+    <testcase classname='iMusicTests.iMusicRequestTest' name='testGetVideoList' time='0.001'/>
+    <testcase classname='iMusicTests.iMusicRequestTest' name='testPerformanceExample' time='0.254'/>
+  </testsuite>
   <testsuite name='iMusicTests.iMusicTests' tests='3' failures='0'>
-    <testcase classname='iMusicTests.iMusicTests' name='testExample' time='0.001'/>
+    <testcase classname='iMusicTests.iMusicTests' name='testExample' time='0.002'/>
     <testcase classname='iMusicTests.iMusicTests' name='testExample2' time='0.000'/>
-    <testcase classname='iMusicTests.iMusicTests' name='testPerformanceExample' time='0.263'/>
+    <testcase classname='iMusicTests.iMusicTests' name='testPerformanceExample' time='0.252'/>
   </testsuite>
 </testsuites>

@@ -1,9 +1,9 @@
 lane :tests do
-  scan(
-    scheme: 'iMusic',
-    devices: ["iPhone SE"],
-    clean: true,
-    skip_slack: true,
-    output_types: "html"
-  )
+
+UI.success "Launching tests..."
+
+scan(
+  project: "iMusic.xcodeproj"
+)
+
 end
